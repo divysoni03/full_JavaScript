@@ -10,7 +10,7 @@ Operators:
 
 //user input -> prompt fn
 
-// var a = +prompt("Enter a: ")
+// var a = +prompt("Enter a: ") // "+" plus is for integer values
 // var b = Number(prompt("Enter b: "))
 
 // console.log(`a: ${a}, b: ${b}, typeof a: ${typeof a}, typeof b: ${typeof b}`)
