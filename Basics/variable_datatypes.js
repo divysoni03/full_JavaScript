@@ -16,7 +16,7 @@ error-2: undeclared (when the var is not declared) (ReferenceError)
 // message = "Welcome home"    // (TypeError)
 // console.log(message)
 
-// let abc = "Traingle"
+// let abc = "Triangle"
 // console.log(abc);
 
 
