@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(`Billing Cart\n\n1.Premium Plan\n2.Gold Plan\n3.Silver Plan\n4.Regular Plan`);
+var membershipChoice = +prompt("Enter Your Plan Choice : ");
+
+var cartValue = +prompt("Enter Your Cart Value : ");
+var discount = 0;
+var freeshipFlag = false;
+
+switch(membershipChoice) {
+    case 1:
+        discount = 20;
+        freeshipFlag = true;
+        document.write(`NOTE : Your Membership Plan is Premium Plan S you already have Extra Discount !`);
+        document.write(`Your Cart Value : ${cartValue},\nFinal Price : ${(cartValue*discount)/100}`);
+        if(freeshipFlag) {
+            document.write(`Congratulations !! You Got Free Shipping.`);
+        }
+        break;
+    case 2:
+        discount = 15;
+        if(cartValue >= 200 ) {
+            document.write(`Congratulations !! Your Cart Value is over 200$ so Your getting 15% off on the products`);
+            cartValue = (cartValue*discount)/100;
+        }
+        else {
+            document.write(`NOTE : For 15% Discount Cart Price should be over 200$ !`);
+        }
+        var flag = false;
+        flag = prompt("Do You Have Discount Coupon ?");
+        if(flag) {
+            var coupon = prompt("Enter Your Discount Code : ");
+            if(coupon === "BLACKFRIDAY") {
+                document.write(`Congratulations !! You Got 10% more Discount on Your Products.`);
+                cartValue = (cartValue*10)/100;
+            }
+            else if(coupon === "FREESHIP") {
+                document.write(`Congratulations !! You Got Free Shipping.`);
+                freeshipFlag = true;
+            }
+        }
+        document.write(`Final Value : ${cartValue},\n`);
+        if(freeshipFlag) {
+            document.write(`Congratulations !! You Got Free Shipping.`);
+        }
+        else {
+            document.write(`NOTE : You Have To Pay 10$ Extra For Shipping.`);
+        }
+        break;
+    case 3:
+        discount = 10;
+        if(cartValue >= 100 ) {
+            document.write(`Congratulations !! Your Cart Value is over 100$ so Your getting 10% off on the products`);
+            cartValue = (cartValue*discount)/100;
+        }
+        else {
+            document.write(`NOTE : For 10% Discount Cart Price should be over 100$ !`);
+        }
+        var flag = false;
+        flag = prompt("Do You Have Discount Coupon ?");
+        if(flag) {
+            var coupon = prompt("Enter Your Discount Code : ");
+            if(coupon === "BLACKFRIDAY") {
+                document.write(`Congratulations !! You Got 10% more Discount on Your Products.`);
+                cartValue = (cartValue*10)/100;
+            }
+            else if(coupon === "FREESHIP") {
+                document.write(`Congratulations !! You Got Free Shipping.`);
+                freeshipFlag = true;
+            }
+        }
+        document.write(`Final Value : ${cartValue},\n`);
+        if(freeshipFlag) {
+            document.write(`Congratulations !! You Got Free Shipping.`);
+        }
+        else {
+            document.write(`NOTE : You Have To Pay 10$ Extra For Shipping.`);
+        }
+        break;
+    case 4:
+        discount = 1;
+        var flag = false;
+        flag = prompt("Do You Have Discount Coupon ?");
+        if(flag) {
+            var coupon = prompt("Enter Your Discount Code : ");
+            if(coupon === "BLACKFRIDAY") {
+                document.write(`Congratulations !! You Got 10% more Discount on Your Products.`);
+                cartValue = (cartValue*10)/100;
+            }
+            else if(coupon === "FREESHIP") {
+                document.write(`Congratulations !! You Got Free Shipping.`);
+                freeshipFlag = true;
+            }
+        }
+        document.write(`Final Value : ${cartValue},\n`);
+        if(freeshipFlag) {
+            document.write(`Congratulations !! You Got Free Shipping.`);
+        }
+        else {
+            document.write(`NOTE : You Have To Pay 10$ Extra For Shipping.`);
+        }
+        break;
+}   
+    </script>
+</body>
+</html>
