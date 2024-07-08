@@ -18,8 +18,8 @@ switch(membershipChoice) {
     case 1:
         discount = 20;
         freeshipFlag = true;
-        document.write(`\nNOTE : Your Membership Plan is Premium Plan S you already have Extra Discount !`);
-        document.write(`\nYour Cart Value : ${cartValue},\nFinal Price : ${(cartValue*discount)/100}`);
+        document.write(`\nNOTE : Your Membership Plan is Premium Plan So you already have Extra Discount(20%)!`);
+        document.write(`\nYour Cart Value : ${cartValue},\nFinal Price : ${cartValue-((cartValue*discount)/100)}`);
         if(freeshipFlag) {
             document.write(`\nCongratulations !! You Got Free Shipping.`);
         }
@@ -28,7 +28,7 @@ switch(membershipChoice) {
         discount = 15;
         if(cartValue >= 200 ) {
             document.write(`\nCongratulations !! Your Cart Value is over 200$ so Your getting 15% off on the products`);
-            cartValue = (cartValue*discount)/100;
+            cartValue = cartValue-((cartValue*discount)/100);
         }
         else {
             document.write(`\nNOTE : For 15% Discount Cart Price should be over 200$ !`);
@@ -39,7 +39,7 @@ switch(membershipChoice) {
             var coupon = prompt("\nEnter Your Discount Code : ");
             if(coupon === "BLACKFRIDAY") {
                 document.write(`\nCongratulations !! You Got 10% more Discount on Your Products.`);
-                cartValue = (cartValue*10)/100;
+                cartValue = cartValue-((cartValue*10)/100);
             }
             else if(coupon === "FREESHIP") {
                 document.write(`\nCongratulations !! You Got Free Shipping.`);
@@ -58,7 +58,7 @@ switch(membershipChoice) {
         discount = 10;
         if(cartValue >= 100 ) {
             document.write(`\n\nCongratulations !! Your Cart Value is over 100$ so Your getting 10% off on the products`);
-            cartValue = (cartValue*discount)/100;
+            cartValue = cartValue-((cartValue*discount)/100);
         }
         else {
             document.write(`\n\nNOTE : For 10% Discount Cart Price should be over 100$ !`);
@@ -69,7 +69,7 @@ switch(membershipChoice) {
             var coupon = prompt("\n\nEnter Your Discount Code : ");
             if(coupon === "BLACKFRIDAY") {
                 document.write(`\n\nCongratulations !! You Got 10% more Discount on Your Products.`);
-                cartValue = (cartValue*10)/100;
+                cartValue = cartValue-((cartValue*10)/100);
             }
             else if(coupon === "FREESHIP") {
                 document.write(`\n\nCongratulations !! You Got Free Shipping.`);
@@ -92,7 +92,7 @@ switch(membershipChoice) {
             var coupon = prompt("\nEnter Your Discount Code : ");
             if(coupon === "BLACKFRIDAY") {
                 document.write(`\n\nCongratulations !! You Got 10% more Discount on Your Products.`);
-                cartValue = (cartValue*10)/100;
+                cartValue = cartValue-((cartValue*10)/100);
             }
             else if(coupon === "FREESHIP") {
                 document.write(`\n\nCongratulations !! You Got Free Shipping.`);
