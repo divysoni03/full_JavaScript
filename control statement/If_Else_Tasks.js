@@ -162,7 +162,13 @@ else {
 // Expected Output :
 // Root are imaginary;
 // No solution.
+console.log("Quadratic Equation : Ax^2 + Bx + C");
+var a = +prompt("Enter value of A :");
+var b = +prompt("Enter value of B :");
+var c = +prompt("Enter value of C :");
 
+var root = (-b + Math.sqrt((Math.pow(b,2))-(4*a*c)))/2*a;
+console.log(`Roots are : +${root} and -${root}`);
 
 // 12. Write a C program to read the roll no, name and marks of three subjects and calculate the total, percentage and division.
 // Test Data :
@@ -178,6 +184,31 @@ else {
 // Total Marks = 240
 // Percentage = 80.00
 // Division = First
+var studentName = prompt("Enter Students Name :");
+var rollNo = +prompt("Enter Roll Number :");
+var chem = +prompt("Enter Your chemistry Marks :");
+var phy = +prompt("Enter Your Physics Marks :");
+var maths = +prompt("Enter Your Maths Marks :");
+
+var totalMarks = chem + phy + maths;
+var percentage = (totalMarks /300) *100;
+
+console.log(`Student Name : ${studentName}`);
+console.log(`Student RollNo : ${rollNo}`);
+console.log(`Marks in Physics : ${phy}`);
+console.log(`Marks in Chemistry : ${chem}`);
+console.log(`Marks in Maths : ${maths}`);
+console.log(`Total Marks : ${totalMarks}`);
+console.log(`Percentage : ${percentage}`);
+
+if(percentage > 90) {
+    console.log("Division : First");
+}else if (percentage < 90 && percentage >80) {
+    console.log("Division : Second");
+}
+else if(percentage <80 && percentage >70) {
+    console.log("Division : Third");
+}
 
 
 // 13. Write a C program to read temperature in centigrade and display a suitable message according to the temperature state below:
