@@ -222,7 +222,25 @@ else if(percentage <80 && percentage >70) {
 // 42
 // Expected Output :
 // Its very hot.
-
+var temp = +prompt("Enter Temperature :");
+if(temp < 0) {
+    console.log(`Temp is ${temp} then Freezing weather`);
+}
+else if(temp>0 && temp<10) {
+    console.log(`Temp is ${temp} then Very Cold weather`);
+}
+else if(temp>10 && temp<20) {
+    console.log(`Temp is ${temp} then weather`);
+}
+else if(temp>20 && temp <30) {
+    console.log(`Temp is ${temp} then Normal in Temp`);
+}
+else if(temp>30 && temp<40) {
+    console.log(`Temp is ${temp} then its hot`);
+}
+else {
+    console.log(`Temp is ${temp} then its very very hot`);
+}
 
 // 14. Write a C program to check whether a triangle is Equilateral, Isosceles or Scalene.
 // Test Data :
