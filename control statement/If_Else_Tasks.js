@@ -268,7 +268,13 @@ else {
 // k
 // Expected Output :
 // The alphabet is a consonant.
-
+var char = prompt("Enter a Character :");
+if(char==='a'||char==='A'||char==='e'||char==='E'||char==='i'||char==='I'||char==='o'||char==='O'||char==='u'||char==='U') {
+    console.log(`Entered Character ${char} is Vowel`);
+}
+else {
+    console.log(`Entered Character is ${char} is Consonant.`);
+}
 
 // 18. Write a C program to calculate profit and loss on a transaction.
 // Test Data :
