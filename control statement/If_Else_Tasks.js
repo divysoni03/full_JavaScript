@@ -82,7 +82,7 @@ document.write(`Your Entered Number ${m} so according to that n : ${n}`);
 // The person is Dwarf.
 var height = +prompt("Enter Your Height(in cm): ");
 if(height >0 && height <100) {
-    document.write("ohhhh very dwarf");
+    document.write("Oh very dwarf");
 }
 else if(height >100 && height < 152){
     document.write("At list ur 5 ft");
