@@ -304,7 +304,6 @@ else {
 // 400 and above but less than 600		@1.80
 // 600 and above				@2.00
 // If bill exceeds Rs. 400 then a surcharge of 15% will be charged and the minimum bill should be of Rs. 100/-
-
 // Test Data :
 // 1001
 // James
@@ -316,6 +315,38 @@ else {
 // Amount Charges @Rs. 2.00 per unit : 1600.00
 // Surchage Amount : 240.00
 // Net Amount Paid By the Customer : 1840.00
+
+var customerName = prompt("Enter Your name :");
+var customerId = +prompt("Enter Your Id :");
+var units = +prompt("Enter Total used Number of units :");
+
+var billAmount = 0.0;
+var chargesPerUnit = 0.0;
+if(units<100) {
+    console.log(`ERROR : Can't Proceed Bill amount is small so go use some more units.`);
+}
+else if(units>100&&units<199) {
+    chargesPerUnit = 1.2;
+}
+else if(units>200&&units<400) {
+    chargesPerUnit = 1.5;
+}
+else if(units>400&&units<600) {
+    chargesPerUnit = 1.8;
+}
+else if(units>600) {
+    chargesPerUnit = 2.0;
+}
+
+console.log(`Name :${customerName},\nCustomer I'd :${customerId},\nTotal used units :${units},\n`);
+billAmount = units*chargesPerUnit;
+if(billAmount>400) {
+    billAmount += (billAmount*15)/100;
+}
+console.log(`Total Payable Amount :${billAmount}`);
+
+
+
 
 // 20. Write a program in C to accept a grade and declare the equivalent description :
 
