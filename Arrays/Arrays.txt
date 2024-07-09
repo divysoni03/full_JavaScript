@@ -1,0 +1,111 @@
+1. Student Grades and Names
+
+-> Problem Statement:
+- Objective: Develop a system to manage and display student names along with their respective grades for different subjects.
+- Tasks:
+  - Store student names in an array ("students").
+  - Store corresponding grades in another array ("grades").
+  - Print each student's name and grade.
+
+Sample Data:
+- Students: ["John Doe", "Jane Smith", "Michael Johnson"]
+- Grades: [85, 92, 78]
+
+Output:
+Student: John Doe, Grade: 85
+Student: Jane Smith, Grade: 92
+Student: Michael Johnson, Grade: 78
+
+
+
+2. Inventory Management
+
+-> Problem Statement:
+- Objective: Implement an inventory management system for a grocery store.
+- Tasks:
+  - Maintain a list of vegetable names in an array ("vegetables").
+  - Keep track of quantities for each vegetable in another array ("quantities").
+  - Implement operations to add new vegetables, update quantities, and remove out-of-stock items.
+  - Display current inventory status.
+
+Sample Data:
+- Vegetables: ["Carrot", "Tomato", "Spinach"]
+- Quantities: [50, 30, 20]
+
+Output:
+Inventory:
+Carrot - Quantity: 50
+Tomato - Quantity: 30
+Spinach - Quantity: 20
+
+
+3. Recipe Ingredients and Quantities
+
+-> Problem Statement:
+- Objective: Create a system to manage ingredients required for recipes.
+- Tasks:
+  - Store ingredient names in an array ("ingredients").
+  - Maintain quantities needed for each ingredient in another array ("quantities").
+  - Allow for adding new ingredients and updating quantities as needed.
+  - Display a list of ingredients along with their current quantities.
+
+
+Sample Data:
+- Ingredients: ["Flour", "Sugar", "Eggs"]
+- Quantities: [2, 1, 4]
+
+Output:
+Recipe Ingredients:
+Flour - Quantity: 2
+Sugar - Quantity: 1
+Eggs - Quantity: 4
+
+
+4. Event Planning and Attendees
+
+-> Problem Statement:
+- Objective: Organize attendee information for different sessions or workshops at an event.
+- Tasks:
+  - Create arrays to store session names ("sessions") and attendee lists ("attendees").
+  - Implement functionality to add attendees to specific sessions.
+  - Provide options to remove attendees who cancel their registration.
+  - Display the list of attendees for each session.
+
+Sample Data:
+- Sessions: ["Workshop A", "Workshop B", "Seminar"]
+- Attendees:
+  [
+    ["John Doe", "Jane Smith"],
+    ["Michael Johnson", "Emily Brown"],
+    ["David Lee"]
+  ]
+
+Output:
+Workshop A:
+John Doe
+Jane Smith
+
+Workshop B:
+Michael Johnson
+Emily Brown
+
+Seminar:
+David Lee
+
+
+5. Data Filtering and Reporting
+
+-> Problem Statement:
+- Objective: Develop a tool to filter and report on specific data collected over time.
+- Tasks:
+  - Store collected data points in an array ("data").
+  - Implement filters based on criteria such as date range or value range.
+  - Calculate statistics (e.g., average, sum) on filtered data.
+  - Generate reports or summaries based on the processed data.
+
+Sample Data:
+- Data Points: [120, 80, 150, 100, 200, 90, 180]
+
+Output:
+Filtered Data: [120, 150, 200, 180]
+Average: 162.5
