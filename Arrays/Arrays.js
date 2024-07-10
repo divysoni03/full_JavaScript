@@ -40,48 +40,48 @@ Arrays:
 
 // Array methods
 
-var veggies = [
-    "Bitter Gourd (Karela)",
-    "Bottle Gourd (Lauki)",
-    "Ridge Gourd (Turai)",
-    "Snake Gourd (Galka)",
-    "Pointed Gourd (Parwal)",
-    "Drumstick (Moringa)",
-    "Taro Root (Arbi)",
-    "Elephant Foot Yam (Suran)",
-    "Ash Gourd (Petha)",
-    "Ivy Gourd (Tindora)",
-    "Fenugreek Leaves (Methi)",
-    "Amaranth Leaves (Patra)",
-    "Colocasia Leaves (Arbi ke Patte)",
-    "Beet Greens (Chukandar ke Patte)",
-    "Mustard Greens (Sarson)",
-    "Radish Greens (Mooli ke Patte)",
-    "Spinach (Palak)",
-    "Fenugreek Seeds Sprouts (Methi Dana)",
-    "Cluster Beans (Gawar Phali)",
-    "French Beans",
-    "Yardlong Beans (Bora)",
-    "Broad Beans (Sem)",
-    "Green Peas (Matar)",
-    "Corn (Makai)",
-    "Bamboo Shoots (Karil)",
-    "Jackfruit (Kathal)",
-    "Raw Banana (Kachcha Kela)",
-    "Green Papaya (Kachcha Papita)",
-    "Indian Gooseberry (Amla)",
-    "Curry Leaves (Kadi Patta)",
-    "Raw Mango (Keri)",
-    "Sponge Gourd (Nenua)",
-    "Brinjal (Baingan)",
-    "Lady Finger (Bhindi)",
-    "Cabbage (Patta Gobi)",
-    "Cauliflower (Phool Gobi)",
-    "Radish (Mooli)",
-    "Turnip (Shalgam)",
-    "Carrot (Gajar)",
-    "Tomato (Tamatar)"
-]
+// var veggies = [
+//     "Bitter Gourd (Karela)",
+//     "Bottle Gourd (Lauki)",
+//     "Ridge Gourd (Turai)",
+//     "Snake Gourd (Galka)",
+//     "Pointed Gourd (Parwal)",
+//     "Drumstick (Moringa)",
+//     "Taro Root (Arbi)",
+//     "Elephant Foot Yam (Suran)",
+//     "Ash Gourd (Petha)",
+//     "Ivy Gourd (Tindora)",
+//     "Fenugreek Leaves (Methi)",
+//     "Amaranth Leaves (Patra)",
+//     "Colocasia Leaves (Arbi ke Patte)",
+//     "Beet Greens (Chukandar ke Patte)",
+//     "Mustard Greens (Sarson)",
+//     "Radish Greens (Mooli ke Patte)",
+//     "Spinach (Palak)",
+//     "Fenugreek Seeds Sprouts (Methi Dana)",
+//     "Cluster Beans (Gawar Phali)",
+//     "French Beans",
+//     "Yardlong Beans (Bora)",
+//     "Broad Beans (Sem)",
+//     "Green Peas (Matar)",
+//     "Corn (Makai)",
+//     "Bamboo Shoots (Karil)",
+//     "Jackfruit (Kathal)",
+//     "Raw Banana (Kachcha Kela)",
+//     "Green Papaya (Kachcha Papita)",
+//     "Indian Gooseberry (Amla)",
+//     "Curry Leaves (Kadi Patta)",
+//     "Raw Mango (Keri)",
+//     "Sponge Gourd (Nenua)",
+//     "Brinjal (Baingan)",
+//     "Lady Finger (Bhindi)",
+//     "Cabbage (Patta Gobi)",
+//     "Cauliflower (Phool Gobi)",
+//     "Radish (Mooli)",
+//     "Turnip (Shalgam)",
+//     "Carrot (Gajar)",
+//     "Tomato (Tamatar)"
+// ]
 
 // console.log(veggies);
 
@@ -107,3 +107,73 @@ var veggies = [
 
 // var arr = [0, 1]
 // console.log(arr.concat(veggies));
+
+// var a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+// console.log(a.copyWithin(5, 0, 3));
+
+// ... spread operator
+// console.log(...a);
+
+// str = ""
+// for (let i = 0; i < a.length; i++) {
+//     str = str + a[i] + " ";    
+// }
+
+// console.log(str);
+// a = ['a', 'b', 'c', 'd', 'e']
+// b = ['f', 'g', 'h', 'i', 'j']
+
+// var arr = [1, 2, ...a, 9, 10, ...b, 11, [23.2, 34.3, 45.4, 56.5, 67.6]]
+// console.log(arr);
+
+// foreach
+// arr.forEach(i => {
+//     document.write(i + "<br>");
+// })
+
+// for in: iterate over all the properties of an array
+// for (const i in arr) {
+//     console.log(i);
+// }
+
+// for of: iterate over the values in the array
+// for (const i of arr) {
+//     console.log(i);
+// }
+
+
+// Const array 
+
+// const _arr = ["Smit", 'Dhairya_S', "Divy", "Yug", 'Tanvi', 'Dhairya_P', 'Dhruvi', "Nand"];
+
+// console.log(_arr);
+
+// _arr.push("abcd");
+// _arr[1] = "Blueberry";
+
+// console.log(_arr);
+
+// Array Destructuring
+
+const fruits = ['apple', 'banana', 'cherry', 'orange']
+
+// basic destructuring
+// const [first, second, third] = fruits
+
+// skipping items
+// const [first, , second, third] = fruits
+
+// default values
+// const [, , , , fourth='default'] = fruits
+
+// using rest syntax
+// const [fruit_1, ...restFruits] = fruits
+
+// nested dest...
+// const [first, [idx0, idx1, idx2, ...idxr]] = fruits 
+
+//combining with const
+// const [first, second, third] = fruits
+
+// first = 'aple'
+// console.log(first);
