@@ -16,4 +16,27 @@
 // Student: Jane Smith, Grade: 92
 // Student: Michael Johnson, Grade: 78
 
-var arr [] = 
+var studentName = [];
+var studentMarks = [];
+
+let choice =0;
+do{
+    console.log("1.Enter Name & Marks,\n2.Display details About Students,\n0.Exit");
+    choice = prompt("Enter Your Choice: ");
+    switch(choice) {
+        case 1:
+            let sName = prompt("Enter Student Name :");
+            let sMarks = +prompt("Enter Stundent Marks :");
+            studentName.unshift(sName);
+            studentMarks.unshift(sMarks);
+            break;
+        case 2:
+            for(let i=0;i<studentName.length;i++) {
+                console.log(`Student ${i}: ${studentName[i]}, ${studentMarks[i]},\n`)
+            }
+            break;
+        default:
+            console.warn("Warning : Invalid Input, Try Entering Valid Input Again.");
+            break;
+    }
+}while(choice!=0);
