@@ -133,7 +133,7 @@ Arrays:
 
 // for in: iterate over all the properties of an array
 // for (const i in arr) {
-//     console.log(i);
+//     console.log(arr[i].etc);
 // }
 
 // for of: iterate over the values in the array
