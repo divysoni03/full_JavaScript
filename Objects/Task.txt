@@ -1,0 +1,73 @@
+--> Iteration 1 (All the inputs must be entered by our own dear user)
+
+-> Make switch case and ask user to choose the operation
+
+1. Student Information System:
+    - Create an object to store a student's details including name, grade, and subjects.
+    - Access and display the student's name and grade.
+    - Update the student's grade.
+    - Add a new property to store the student's email.
+    - Remove the subject property.
+
+2. Library Management:
+    - Create an object to store information about a book, such as title, author, and publication year.
+    - Access and print the book's title and author.
+    - Update the publication year.
+    - Add a new property to store the book's genre.
+    - Remove the author property.
+
+3. Employee Record:
+    - Create an object to store an employee's details including first name, last name, and salary.
+    - Access and display the employee's first name and salary.
+    - Modify the employee's last name.
+    - Add a new property to store the employee's department.
+    - Remove the salary property.
+
+4. Product Catalog:
+    - Create an object to store a product's details such as name, price, and stock quantity.
+    - Access and print the product's name and price.
+    - Update the product's stock quantity.
+    - Add a new property to store the product's category.
+    - Remove the price property.
+
+5. Vehicle Information:
+    - Create an object to store information about a vehicle, including make, model, and year.
+    - Access and display the vehicle's make and model.
+    - Modify the vehicle's year.
+    - Add a new property to store the vehicle's color.
+    - Remove the model property.
+
+6. Hotel Booking System:
+    - Create an object to store booking details including guest name, room number, and check-in date.
+    - Access and print the guest's name and room number.
+    - Update the check-in date.
+    - Add a new property to store the number of nights stayed.
+    - Remove the room number property.
+
+7. E-commerce Order:
+    - Create an object to store an order's details such as order ID, product name, and quantity.
+    - Access and display the order ID and product name.
+    - Modify the quantity.
+    - Add a new property to store the delivery date.
+    - Remove the product name property.
+
+8. University Course:
+    - Create an object to store course details including course name, instructor, and credits.
+    - Access and print the course name and instructor.
+    - Update the number of credits.
+    - Add a new property to store the course schedule.
+    - Remove the instructor property.
+
+9. Real Estate Listing:
+    - Create an object to store a property's details such as address, price, and square footage.
+    - Access and display the address and price.
+    - Modify the price.
+    - Add a new property to store the number of bedrooms.
+    - Remove the square footage property.
+
+10. Event Management:
+    - Create an object to store event details including event name, date, and location.
+    - Access and print the event name and date.
+    - Update the location.
+    - Add a new property to store the number of attendees.
+    - Remove the date property.
