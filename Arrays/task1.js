@@ -16,4 +16,4 @@
 // Student: Jane Smith, Grade: 92
 // Student: Michael Johnson, Grade: 78
 
-var
+var arr [] = 
