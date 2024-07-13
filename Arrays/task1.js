@@ -27,8 +27,8 @@ do{
         case 1:
             let sName = prompt("Enter Student Name :");
             let sMarks = +prompt("Enter Stundent Marks :");
-            studentName.unshift(sName);
-            studentMarks.unshift(sMarks);
+            studentName.push(sName);
+            studentMarks.push(sMarks);
             break;
         case 2:
             for(let i=0;i<studentName.length;i++) {

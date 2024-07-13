@@ -90,12 +90,13 @@ Arrays:
 // var ret = veggies.push("New Element", "new element 1")
 // console.log(ret);
 
+//console.log(vaggies.push("element 1","element 2","...")); // pushes new element into array from behind
 // console.log(veggies.pop()); //remove last
 // console.log(veggies.shift()); //remove first
 // console.log(veggies.unshift("new element")); //add element at start
 
-// console.log(veggies.slice(0, 5));
-// console.log(veggies.splice(0, 5, "new element 1", "new element 2", "new element 3"));
+// console.log(veggies.slice(0, 5)); // makes a new array containing only array element within the range given into parameter
+// console.log(veggies.splice(0, 5, "new element 1", "new element 2", "new element 3")); // we can add elements manually which will stored into the array at first
 
 // var arr = []
 // veggies.fill(10, 2, 5);
