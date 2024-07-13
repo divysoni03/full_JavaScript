@@ -71,3 +71,49 @@
     - Update the location.
     - Add a new property to store the number of attendees.
     - Remove the date property.
+
+-------------------------------------------------
+
+
+Task 1: Managing a Shopping Cart
+You have a shopping cart represented as an array of objects, where each object represents an item with properties for name, quantity, and price. Calculate the total cost of items in the cart.
+
+var shoppingCart = [
+    { name: "Milk", quantity: 2, price: 33 },
+    { name: "Bread", quantity: 1, price: 40 },
+    { name: "Dahi", quantity: 12, price: 23 }
+];
+
+Task 2: Analyzing Movie Ratings
+You have an array of movie objects, each with properties for title and rating. Find the highest-rated movie.
+
+var movies = [
+    { title: "Movie 1", rating: 6.7 },
+    { title: "Movie 2", rating: 8.5 },
+    { title: "Movie 3", rating: 9.1 },
+    { title: "Movie 4", rating: 7.3 }
+];
+
+Task 3: Organizing a To-Do List
+You have a to-do list represented as an array of strings. Implement a function to add a new task, remove a completed task, and display the current list of tasks.
+
+var toDoList = ["Buy groceries", "Clean the house", "Pay bills"];
+
+Task 4: Processing Sales Data
+You have an array of sales data where each element is an object with properties for the date and sales amount. Calculate the total sales for a given month.
+
+var salesData = [
+    { date: "2024-07-01", amount: 200 },
+    { date: "2024-07-15", amount: 450 },
+    { date: "2024-08-02", amount: 300 },
+    { date: "2024-08-10", amount: 150 }
+];
+
+Task 5: Managing Employee Records
+You have an array of employee objects, each with properties for name and position. Implement functions to promote an employee to a new position and list all employees.
+
+var employees = [
+    { name: "Alice", position: "Developer" },
+    { name: "Bob", position: "Designer" },
+    { name: "Charlie", position: "Manager" }
+];
