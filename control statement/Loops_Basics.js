@@ -3,11 +3,26 @@
 // Enter number & Power :2
 // 5
 // Result of power : 32
+let root = +prompt("Enter Root Number :");
+let power = +prompt("Enter Power : ");
+let ans =0;
+for(let i =0;i<power;i++) {
+    ans *= root;
+}
+console.log(`Power using loop,\nroot number : ${root},\npower number :${power},\nFInally ans : ${ans}`) ;
+
+
 
 // > WAP to find factorial of a given number
 // Output:--
 // Enter the no:5
 // The factorial is 120
+let number = +prompt("Enter a number :");
+let fact=1;
+while (number > 0) {
+    fact *= number--;
+}
+console.log(`Entered number :${number},\nFactorial : ${fact}`);
 
 // > WAP check the no. Armstrong or not
 // Output:--
