@@ -111,7 +111,7 @@ var shoppingCart = [
 var total = 0
 for (const i of shoppingCart) {
     total += (i.quantity * i.price)
-    // console.log(i.quantity + " " + i.price + " -> " + i.quantity * i.price);
+    console.log(i.quantity + " " + i.price + " -> " + i.quantity * i.price);
 }
 
 console.log(total);
@@ -143,6 +143,6 @@ console.log(total);
 // console.log('age' in person);
 // console.log(person.country);    //undefined
 
-for (const prop in person) {
-    console.log(prop);
-}
+// for (const prop in person) {
+//     console.log(prop);
+// }
