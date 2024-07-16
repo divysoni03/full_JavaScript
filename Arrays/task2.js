@@ -71,7 +71,7 @@ do {
             break;
         case 5: 
             for (let i=0;i<vegetables.length;i++) {
-                console.log(`Vegetable ${i}: ${vegetableName[i]}, ${quantities}\n`);
+                console.log(`Vegetable ${i}: ${vegetables[i]}, ${quantities}\n`);
             }
         default:
             console.log("Warning : Invalid Input, Please Try Again With Valid Input.");
