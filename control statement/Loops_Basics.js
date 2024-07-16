@@ -28,11 +28,25 @@ console.log(`Entered number :${number},\nFactorial : ${fact}`);
 // Output:--
 // Enter one no.: 153
 // It is armstrong no
+let num = +prompt("Enter a 3 digit number :");
+let temp = num;
+let arms = 0;
+while(temp != 0) {
+    let rem = temp %10;
+    arms += (rem*rem*rem);
+    temp /=10;
+}
+if(num === arms){
+    console.log(`Entered number ${num} is Armstrong Number.`);
+}
+else {
+    console.log(`Entered number ${num} is not Armstrong number.`);
+}
 
 // > WAP to print whether no. is Palindrome or not
 // Output :--
 // Enter a no.: 1221
-// pelindrome no
+// palindrome no
 
 // > WAP to print Fibonacci Series
 // Output:--
