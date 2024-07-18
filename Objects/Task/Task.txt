@@ -81,7 +81,7 @@ You have a shopping cart represented as an array of objects, where each object r
 var shoppingCart = [
     { name: "Milk", quantity: 2, price: 33 },
     { name: "Bread", quantity: 1, price: 40 },
-    { name: "Dahi", quantity: 12, price: 23 }
+    { name: "ice cream", quantity: 12, price: 23 }
 ];
 
 Task 12: Analyzing Movie Ratings
