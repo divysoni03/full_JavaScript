@@ -58,7 +58,6 @@ say("Hello")
 console.log(square(12))
 add(23, 45)
 
-*/
 
 function say() {
     console.log("(～￣▽￣)～ ✨");
@@ -83,7 +82,30 @@ function setBackup() {
         console.log("You can come at anytime.");
     } else {
         console.log("Sorry No time.");
-    }
+}
 }
 
 setBackup()
+*/
+
+// var say_something = function() {
+//     console.log("ㄟ( ▔, ▔ )ㄏ");
+// }
+
+// say_something();
+
+// var sum = function(n1, n2) {
+//     console.log(`Addition of ${n1} and ${n2} is ${n1+n2}`);
+// }
+
+// sum(2, 3);
+
+
+// var avg = function(arr) {
+//     let sum = 0;
+//     for(let i of arr) {
+//         sum += i;
+//     }
+//     return sum / arr.length;
+// }
+// console.log(avg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))

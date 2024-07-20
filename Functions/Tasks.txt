@@ -1,0 +1,29 @@
+-> Problem 1: Calculate the Sum of Two Numbers
+Statement: Write a named function 'add' that takes two numbers as arguments and returns their sum. Also, write an expression function 'subtract' that takes two numbers as arguments and returns their difference.
+
+-> Problem 2: Find the Maximum of Three Numbers
+Statement: Write a named function 'findMax' that takes three numbers as arguments and returns the maximum of the three. Also, write an expression function 'findMin' that takes three numbers as arguments and returns the minimum of the three.
+
+-> Problem 3: Check if a Number is Even or Odd
+Statement: Write a named function 'isEven' that takes a number as an argument and returns 'true' if the number is even, otherwise 'false'. Also, write an expression function 'isOdd' that takes a number as an argument and returns 'true' if the number is odd, otherwise 'false'.
+
+-> Problem 4: Convert Celsius to Fahrenheit
+Statement: Write a named function 'celsiusToFahrenheit' that takes a temperature in Celsius and converts it to Fahrenheit. Also, write an expression function 'fahrenheitToCelsius' that takes a temperature in Fahrenheit and converts it to Celsius.
+
+-> Problem 5: Calculate the Factorial of a Number
+Statement: Write a named function 'factorial' that takes a number as an argument and returns its factorial. Also, write an expression function 'factorialExpression' that does the same.
+
+-> Problem 6: Reverse a String
+Statement: Write a named function 'reverseString' that takes a string as an argument and returns the string reversed. Also, write an expression function 'reverseStringExpression' that does the same.
+
+-> Problem 7: Check if a String is a Palindrome
+Statement: Write a named function 'isPalindrome' that takes a string as an argument and returns 'true' if the string is a palindrome, otherwise 'false'. Also, write an expression function 'isPalindromeExpression' that does the same.
+
+-> Problem 8: Find the Greatest Common Divisor (GCD)
+Statement: Write a named function 'gcd' that takes two numbers as arguments and returns their greatest common divisor. Also, write an expression function 'gcdExpression' that does the same.
+
+-> Problem 9: Calculate the Fibonacci Sequence
+Statement: Write a named function 'fibonacci' that takes a number 'n' as an argument and returns the first 'n' numbers in the Fibonacci sequence. Also, write an expression function 'fibonacciExpression' that does the same.
+
+-> Problem 10: Check if a Number is Prime
+Statement: Write a named function 'isPrime' that takes a number as an argument and returns 'true' if the number is prime, otherwise 'false'. Also, write an expression function 'isPrimeExpression' that does the same.
