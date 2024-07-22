@@ -41,7 +41,8 @@ var str = "Royal Technosoft";
 
 // console.log(str.endsWith("soft"));
 
-// console.log(str.includes(" ", 6));
+// console.log(str.includes(" ", 1)); // returns true
+// console.log(str.includes(" ", 1)); // returns false
 // console.log(str.indexOf("T"));
 
 // console.log(str.length);
@@ -56,7 +57,7 @@ var str = "Royal Technosoft";
 // console.log(str.search(" "));
 // console.log(str.startsWith("Royal"));
 // console.log(str.slice(2, 7));
-// console.log(str.substring(7, 2));
+// console.log(str.substring(9, 0)); returns substring can be written (9,0) & (0,9) returns same ans 
 
 
 // console.log(str.toLowerCase());
