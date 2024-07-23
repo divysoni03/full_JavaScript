@@ -14,16 +14,7 @@
 var totalUserID = 0;
 
 //users array of objects
-var Users = [
-    {
-        // userId : totalUserID,
-        // userName : "",
-        // userEmail : "",
-        // userPass : "",
-        // userRoles : "",
-        // userLastLogin : "",
-    }
-]
+var Users = [];
 
 //support functions
 function currentTime() {

@@ -93,13 +93,13 @@
 let totalItemCount = 1;
 
 let items = [
-    {
-        itemId: totalItemCount,
-        itemName: "Phone",
-        itemQuantity: 1,
-        itemPrice: 10000.0,
-        itemSupplierDetail: "max",
-    }
+    // {
+    //     itemId: totalItemCount,
+    //     itemName: "Phone",
+    //     itemQuantity: 1,
+    //     itemPrice: 10000.0,
+    //     itemSupplierDetail: "max",
+    // }
 ];
 
 function getDetails() {
