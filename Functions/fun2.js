@@ -103,27 +103,64 @@
 // console.log(gen.next().value);
 
 
-function All() {
-    var n1 = +prompt("Enter n1: ");
-    var n2 = +prompt("Enter n2: ");
+// function All() {
+//     var n1 = +prompt("Enter n1: ");
+//     var n2 = +prompt("Enter n2: ");
 
-    return n1+n2;
+//     return n1+n2;
+// }
+
+// function* fn2() {
+//     yield 1;
+//     yield 2;
+//     yield All();
+//     yield 4;
+//     yield 5;
+//     return 'Done';
+// }
+
+// var gen = fn2();
+
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next().value);
+// console.log(gen.next());
+
+// Generator Delegation
+
+// function* subGenerator() {
+//     yield 'Sub 1';
+//     yield 'Sub 2';
+// }
+
+// function* mainGenerator() {
+//     yield 'Main 1';
+//     yield* subGenerator();
+//     yield 'Main 2';
+// }
+
+// const gen = mainGenerator();
+// for (const value of gen) {
+//     console.log(value);
+// }
+
+
+function* infiniteSequence() {
+    let i = 0;
+    while(true) {
+        yield i++;
+    }
 }
 
-function* fn2() {
-    yield 1;
-    yield 2;
-    yield All();
-    yield 4;
-    yield 5;
-    return 'Done';
-}
+const seq = infiniteSequence();
 
-var gen = fn2();
+console.log(seq.next().value);
+console.log(seq.next().value);
+console.log(seq.next().value);
+console.log(seq.next().value);
 
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next().value);
-console.log(gen.next());
+// for (const i of seq) {
+//     console.log(i);
+// }
