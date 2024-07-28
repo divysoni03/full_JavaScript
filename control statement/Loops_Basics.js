@@ -47,15 +47,43 @@ else {
 // Output :--
 // Enter a no.: 1221
 // palindrome no
+var num1 = 1221;
+let digits = num1.toString().split('');
+let i = 0, j = digits.length - 1;
+
+while (i < j) {
+    let temp = digits[i];
+    digits[i] = digits[j];
+    digits[j] = temp;
+    i++;
+    j--;
+}
+console.log(digits.join('') === num1.toString() ? "Yes" : "No");
+
 
 // > WAP to print Fibonacci Series
 // Output:--
 // 0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,
+let a =0,b=1;
+console.log(a,", ",b, ", ");
+for(let i=2;i<12;i++){
+    let c = a+b;
+    console.log(c, ", ");
+    a= b;
+    b= c;
+}
 
 // > WAP to find sum of digit.
 // Output:-
 // Enter a Number:15
 // Sum of digits of a number:6
+var number1 = prompt("Enter a number :"); 
+let sum =0;
+while(number1!==0) {
+    sum += number1%10;
+    number1/=10;
+}
+console.log("Sum : ", sum);
 
 // > WAP to find sum of odd digit of entered digit.
 // Output:-

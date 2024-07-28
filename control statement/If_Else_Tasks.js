@@ -360,13 +360,50 @@ console.log(`Total Payable Amount :${billAmount}`);
 // Input the grade :A
 // Expected Output :
 // You have chosen : Average
-
+var ch = prompt("Input the grade :");
+if(ch === 'E') {
+    console.log("Excellent");
+}
+else if(ch ==='V') {
+    console.log("Very good");
+}
+else if(ch ==='G') {
+    console.log("Good");
+}
+else if(ch === 'A') {
+    console.log("Average");
+}
+else {
+    console.log("Fail");
+}
 
 // 21. Write a C program to read any day number in integer and display the day name in word format.
 // Test Data :
 // 4
 // Expected Output :
 // Thursday
+var digit = +prompt("Enter number between 1-7 : ");
+if(digit ===1) {
+    console.log("Monday");
+}
+else if(digit === 2) {
+    console.log("Tuesday");
+}
+else if(digit === 3) {
+    console.log("Wednesday");
+} 
+else if(digit == 4) {
+    console.log("Thursday");
+}
+else if(digit == 5) {
+    console.log("Friday")
+}
+else if(digit ===6 ) {
+    console.log("Saturday");
+}
+else {
+    console.log("Sunday");
+}
 
 
 // 22. Write a program in C to read any digit and display it in the word.
