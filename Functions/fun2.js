@@ -6,7 +6,9 @@
 // }
 // greet();
 
+// var add = (a, b) => a + b;
 // var add = (a, b) => a + b
+// var add = (a, b) => return (a+b);
 // console.log(add(2, 3));
 
 // var product = (n1, n2) => console.log(`${n1} * ${n2} = ${n1*n2}`)
@@ -65,7 +67,7 @@
 // console.log(gen.next());
 // console.log(gen.next());
 
-// for (const i of gen) {
+// for (const i of gen) { //we can't use for in because there are no properties.
 //     console.log(i);
 // }
 
@@ -81,7 +83,7 @@
 // var gen = fn1();
 
 // console.log(gen.next());
-// console.log(gen.next("Hello, World!"));
+// console.log(gen.next("Hello, World!")); //pass back the parameter to the previous yield.
 
 
 // function* fn2() {

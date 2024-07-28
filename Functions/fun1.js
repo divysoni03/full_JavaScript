@@ -88,6 +88,7 @@ function setBackup() {
 setBackup()
 */
 
+//expression function
 // var say_something = function() {
 //     console.log("ㄟ( ▔, ▔ )ㄏ");
 // }
