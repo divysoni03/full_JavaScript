@@ -1,7 +1,7 @@
 // 4. E-commerce Order Processing:
 //    Develop an order processing system for an e-commerce platform. Each order should be an object containing properties like "orderID", "customerID", "orderDate", "items" (an array of item objects), "shippingAddress", and "status". Implement functions to place orders, update order status, and calculate the total order cost.
-var orders = []; // Array to store order objects
-var orderIds = 101; // Starting order ID
+var orders = [];
+var orderIds = 101;
 
 function totalOrderCost() {
     let tempOrderId = +prompt("Enter Order Id to get total payable amount:");
@@ -60,7 +60,7 @@ function placeOrder() {
     };
 
     orders.push(payload);
-    addToCart(orders.length - 1); // Add items to the newly placed order
+    addToCart(orders.length - 1);
 
     orderIds++;
     console.info("New order added.");
