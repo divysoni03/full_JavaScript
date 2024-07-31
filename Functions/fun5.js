@@ -155,12 +155,66 @@
 
 // ### Parameter Destructuring:
 // 1. Write a function `sum` that takes an object `{ a, b }` as a parameter using destructuring and returns the sum of `a` and `b`.
-function sumOfObject(a, b) {
-    const [val1, val2, ...rest] = a;
-    
-}
+// var obj = {
+//     a:5,
+//     b:10,
+// }
+// function sumOfObject({a, b}) {
+//     return a+b;
+// }
+// console.log(sumOfObject(obj));
+
 
 // 2. Explain how you can use parameter destructuring to swap two variables `x` and `y` without using a temporary variable.
+// let array = [1,2];
+
+// var [a,b] = array;
+// console.log("Before Swapping : ",a,b);
+// a = a+b; //1+2 ,a=3
+// b = a-b; //3-2 ,b=1
+// a = a-b; //3-1 ,a=2
+// console.log("After Swapping :", a,b);
+
 // 3. Create a function `printUser` that takes an object `{ name, age }` and logs `"Name: <name>, Age: <age>"` using destructuring in the function parameter.
+// var obj = {
+//     Name : "bob",
+//     age : 18,
+// }
+
+// const {Name : nm, age : ag} = obj;
+// console.log("Name : ", nm);
+// console.log("age : ", ag);
+
 // 4. Write a function `getFullName` that takes an object `{ firstName, lastName }` as an argument using destructuring and returns the full name as a string.
+// var obj = {
+//     firstName: "",
+//     lastName: "",
+// };
+// function getFullName(obj) {
+//     // obj.firstName = prompt("Enter First Name :");
+//     // obj.lastName = prompt("Enter Last Name :");
+//     obj.firstName = "bob";
+//     obj.lastName = "champ";
+// }
+
+// getFullName(obj);
+// const { firstName: _Fname, lastName: _Lname } = obj;
+// console.log("First Name :", _Fname);
+// console.log("Last Name :", _Lname);
+
+
 // 5. Implement a function `getConfig` that accepts an object `{ url, method }` and logs `"Request to <url> using method <method>"` using parameter destructuring.
+// var obj = {
+//     url : "",
+//     method : "",
+// };
+
+// function getConfig(obj) {
+//     obj.url = "www.google.com";
+//     obj.method = "Post";
+// }
+
+// getConfig(obj);
+// const {url : _url, method : _method} = obj;
+
+// console.log(`Request to ${_url} Using method ${_method}.`);
