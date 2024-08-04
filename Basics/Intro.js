@@ -8,5 +8,7 @@ JS
 
 */
 
-naam = prompt("Enter your name: ")
+// const naam = prompt("Enter your name: ")
+const naam = "bhavy"
+
 console.log("Hello,", naam);
