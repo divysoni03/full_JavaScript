@@ -52,6 +52,8 @@
 // --------------------------------------------------------------------------------------------
 
 // Some Warning
+// ============================================================================================
+
 
 // 'use strict';
 
@@ -104,4 +106,44 @@
 
 // obj.showValue();
 // obj.delayedShow();
+// --------------------------------------------------------------------------------------------
+
+// Factory functions & discuss some memory related problems.
+// A factory function is a type of function that returns a new object each time it is called.
+
+// function createPerson(name) {
+//     return {
+//         name: name,
+//         greet() {
+//             console.log(`Hi, I am ${name}`);
+//         }
+//     }
+// }
+
+// const person1 = createPerson('Tom');
+// const person2 = createPerson('Jerry');
+
+// person1.greet();
+// person2.greet();
+
+// First Solution to that problem
+
+function greet() {
+    console.log(`Hi, I am ${this.name}`);
+}
+
+function createPerson(name) {
+    return {
+        name: name,
+        greet: greet,
+    }
+}
+
+const person1 = createPerson('Tom');
+const person2 = createPerson('Jerry');
+
+person1.greet();
+person2.greet();
+
+
 // --------------------------------------------------------------------------------------------

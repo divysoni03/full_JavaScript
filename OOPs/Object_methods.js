@@ -5,21 +5,29 @@ let person = {
     // greet: function () {
     //     console.log('Hello!');
     // },
-    // greet() {   //ES6
+
+    // greet() {   //ES6 - Short syntax for methods
     //     console.log('Hello!');
     // },
+
     a: this == window,  //this here is in global context
+
     getFullName() {
         return this.firstname + ' ' + this.lastname //this here is in local context
     }
 }
+
 // person.gender = "male";
+
 // person.greet = function () {
 //     console.log('Hello!');
 // }
+
 // person.greet();
+
 console.log(person.getFullName());
 */
+
 // let counter = {
 //     count: 0,
 //     next: function() {
@@ -29,8 +37,6 @@ console.log(person.getFullName());
 
 // console.log(counter.next());
 
-this.color = "Red";
-console.log(window.color);
 // this.color = "Red";
 // console.log(window.color);
 
