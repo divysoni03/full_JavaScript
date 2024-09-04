@@ -51,10 +51,48 @@ console.log(child.newSkills);
 // 3. Binds this inside the constructor function to the new object.
 // 4. Returns the new object, unless the constructor function returns its own object.
 
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// const person1 = new Person('Annie', 21);
+// console.log(person1);
+// -------------------------------------------------------------------------
+// Constructor Function with new Keyword
+
+function Animal(type, sound) {
+    this.type = type;
+    this.sound = sound;
 }
 
-const person1 = new Person('Annie', 21);
-console.log(person1);
+// Animal.prototype.makeSound = function() {
+//     console.log(`${this.type} makes a ${this.sound} sound.`);
+// }
+
+const dog = new Animal('Dog', 'bark');
+const cat = new Animal('Cat', 'meow');
+
+dog.makeSound();
+cat.makeSound();
+console.log(dog.type);
+
+// -------------------------------------------------------------------------
+Class Keyword
+
+class Animal {
+    constructor(type, sound) {
+        this.type = type;
+        this.sound = sound;
+    }
+
+    makeSound() {
+        console.log(`${this.type} makes a ${this.sound} sound.`);
+    }
+}
+
+const dog = new Animal('Dog', 'bark');
+const cat = new Animal('Cat', 'meow');
+
+dog.makeSound();
+cat.makeSound();
