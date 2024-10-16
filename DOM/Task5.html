@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5 : typing</title>
+</head>
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: skyblue;
+    }
+    div {
+        width: 350px;
+        height: 150px;
+        text-align: center;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+<body>
+    <div></div>
+
+    <script>
+        var body = document.body;
+        var div = document.querySelector("div");
+
+        body.onkeydown = function(event) {
+            div.innerText += event.key;
+        }
+    </script>
+</body>
+</html>
