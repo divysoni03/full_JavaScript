@@ -42,9 +42,9 @@
     button {
         padding: 15px 25px;
         margin-top: 50px;
-        margin-left: 35px;
+        margin-left: 55px;
         border-radius: 12px;
-        background-color: grey;
+        background-color: green;
         font-size: 24px;
     }
 </style>
@@ -54,20 +54,26 @@
         <div class="bulb"></div>
         <div class="holder"></div>
 
-        <button onclick="lightUP()">light up</button>
+        <button onclick="lightUP()">ON</button>
     </div>
 
     <script>
         var b = document.querySelector(".bulb");
+        var button = document.querySelector("button");
 
         function lightUP() {
             if(b.style.backgroundColor == "yellow") {
                 b.style.backgroundColor = "grey";
                 b.style.transition = "0.3s";
+                button.innerText = "ON";
+                button.style.backgroundColor = "green";
+                
             }
             else {
                 b.style.backgroundColor = "yellow";
-                b.style.transition = "0.3s"  
+                b.style.transition = "0.3s";
+                button.innerText = "OFF";
+                button.style.backgroundColor = "red";
             }
         }
     </script>
