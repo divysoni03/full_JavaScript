@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 version 2 : light up bulb</title>
+</head>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: grey;
+        }
+        img {
+            width: 200px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 20px 30px;
+            background-color: green;
+        }
+    </style>
+<body>
+    <img src="off.jpeg" alt="">
+    <button onclick="lightUP()">ON</button>
+
+    <script>
+        var image = document.querySelector("img");
+        var button = document.querySelector("button");
+
+        function lightUP() {
+            if(image.attributes[0].value == "on.jpeg") {
+                image.attributes[0].value = "off.jpeg";
+                button.innerText = "OFF";
+                button.style.backgroundColor = "red";
+            }
+            else {
+                image.attributes[0].value = "on.jpeg";
+                button.innerText = "ON";
+                button.style.backgroundColor = "green";
+            }
+        }
+    </script>
+</body>
+</html>
