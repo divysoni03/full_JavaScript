@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form data</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: tomato;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column;
+        width: 80%;
+        height: 100vh;
+        background-color: lightblue;
+        padding: 0px 10px;
+    }
+    h2 {
+        font-size: 32px;
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        text-shadow: 3px 3px 0px red;
+    }
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    input {
+        margin-bottom: 10px;
+        border: none;
+        padding: 5px 2px;
+        border-radius: 5px;
+        text-indent: 5px;
+    }
+    label {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifnt
+    }
+    .submitBtn {
+        padding: 10px 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        border: 1px solid greenyellow;
+        border-radius: 5px;
+        box-shadow: 2px 2px 0px green;
+    }
+    .submitBtn:hover {
+        background-color: greenyellow;
+        box-shadow: 0px 0px 0px;
+        border: 1px solid green;
+        transition: all .3s;
+        transform: translate(1px, 1px);
+    }
+    .submitBtn:not(:hover) {
+        background-color: white;
+        box-shadow: 2px 2px 0px green;
+        border: 1px solid greenyellow;
+        transition: all .3s;
+    }
+</style>
+<body>
+    <div class="container">
+         <h2>Contact Us</h2>
+
+
+         <form action="">
+            <div class="mainForm">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="email">Email</label>
+                <br>
+                <input type="text" name="email" id="email">
+                <br>
+                <label for="message">message</label>
+                <br>
+                <input type="message" name="message" id="message">
+            </div>
+
+            <button class="submitBtn">submit</button>
+         </form>
+
+
+         <table border="">
+            <tr>
+                <th>Sr No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message</th>
+            </tr>
+         </table>
+    </div>
+
+    <script src="Form.js"></script>
+</body>
+</html>
