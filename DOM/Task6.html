@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboard checker</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container {
+        width: 560px;
+        height: 250px;
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 15px;
+        flex-wrap: wrap;
+    }
+    .keys {
+        width: 45px;
+        height: 35px; 
+        border: 1px solid black;
+        margin: 5px;
+        border-radius: 5px;
+        text-align: center;
+        align-content: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+        transition: all 0.3s;
+        box-shadow: 1px 1px 0px;
+    }
+    .text {
+        width: 550px;
+        height: 60px;
+        border: 1px solid;
+        border-radius: 15px;
+        margin-bottom: 30px;
+        background-color: thistle;
+        text-align: left;
+        text-indent: 20px;
+        padding: 20px 10px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bolder;
+    }
+</style>
+<body>
+    <div class="text"></div>
+    <div class="container">
+        <div class="q keys">q</div>
+        <div class="w keys">w</div>
+        <div class="e keys">e</div>
+        <div class="r keys">r</div>
+        <div class="t keys">t</div>
+        <div class="y keys">y</div>
+        <div class="u keys">u</div>
+        <div class="i keys">i</div>
+        <div class="o keys">o</div>
+        <div class="p keys">p</div>
+        <div class="a keys">a</div>
+        <div class="s keys">s</div>
+        <div class="d keys">d</div>
+        <div class="f keys">f</div>
+        <div class="g keys">g</div>
+        <div class="h keys">h</div>
+        <div class="j keys">j</div>
+        <div class="k keys">k</div>
+        <div class="l keys">l</div>
+        <div class="z keys">z</div>
+        <div class="x keys">x</div>
+        <div class="c keys">c</div>
+        <div class="v keys">v</div>
+        <div class="b keys">b</div>
+        <div class="n keys">n</div>
+        <div class="m keys">m</div>
+    </div>
+
+
+    <script>
+        // let text = document.querySelector(".text");
+
+        document.body.onkeydown = function(event) {
+            let key = event.key.toLowerCase();
+
+            let elements = document.getElementsByClassName(key);
+ 
+            if (key == "backspace") {
+                text.innerHTML = "";
+            } 
+            else if(elements.length > 0) {
+                // if(key >= 'a' && key <= 'z') {
+                //     text.innerHTML += key;
+                // }
+
+                let element = elements[0];
+                element.style.backgroundColor = "blue";
+                element.style.color = "white";      
+            }
+        }
+
+        document.body.onkeyup = function() {
+            let key = event.key.toLowerCase();
+
+            let elements = document.getElementsByClassName(key);
+
+            if (elements.length > 0) {
+                let element = elements[0];
+                element.style.backgroundColor = "white";
+                element.style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
