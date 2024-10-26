@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: steelblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    div {
+        width: 298px;
+        height: 298px;
+        background-color: white;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div img {
+        display: inherit;
+        width: 297px;
+        height: 297px;
+        display: none;
+        border-radius: 15px;
+    }
+
+    button {
+        padding: 20px 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+        border-radius: 12px;
+        background-color: slateblue;
+    }
+</style>
+<body>
+    <div>
+        <span>10</span>
+        <img src="diwali.jpg" alt="diwali photo">
+    </div>
+    <button>Start</button>
+    <script>
+        let div = document.querySelector("span");
+        let button = document.querySelector("button");
+
+        let timer = 10;
+        let func;
+        let image = document.querySelector("img");
+        
+        button.onclick = () => {
+            func = setInterval(() => {
+                div.innerText = timer--;
+                if(timer === -1) {
+                    stopTimer();
+                }
+            }, 1000);
+        }
+        
+        
+        function stopTimer() {
+            clearInterval(func);
+            div.style.display = "none";
+            image.style.display = "inherit";
+        }
+        
+    </script>
+</body>
+</html>
