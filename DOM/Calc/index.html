@@ -3,54 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <input type="text" readonly>
-
-        <div class="buttons">
-            <button>AC</button>
-            <button>DEL</button>
-            <button>%</button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>00</button>
-            <button>.</button>
-            <button>=</button>
-        </div>
-        
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
-
-
-
-<!--
-    Zafar sir code :
-
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         *{
@@ -66,11 +18,11 @@
         }
         div{
             width: 400px;
-            height: 70%;
+            height: 75%;
             background-color: gray;
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            grid-template-rows: auto repeat(4,1fr);
+            grid-template-rows:auto auto repeat(5,1fr);
             gap: 10px;
             padding: 30px;
             border-radius: 10px;
@@ -94,11 +46,19 @@
         button:hover{
             background-color: gainsboro;
         }
+        section{
+            height: 20px;
+            grid-column: 1/5;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
     <div>
-        <input type="text" readonly>
+        <section class="outer">
+            
+        </section>
+        <input type="text" readonly value="0">
         <button>AC</button>
         <button>DEL</button>
         <button>/</button>
@@ -125,4 +85,34 @@
 </body>
 </html>
 
--->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+        }
+        button{
+            padding: 10px ;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button><button>10</button>
+    </div>
+
+    <script>
+        const div = document.querySelector('div');
+
+        div.addEventListener('click',function(event){
+            console.log(event.target.innerHTML);
+        });
+    </script>
+</body>
+</html> -->
