@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1: promise on button (onclick event + promise)</title>
+</head>
+<body>
+    <button class="myBtn">click me</button>
+    <span class="mySpan"></span>
+
+    <script>
+        var btn = document.querySelector(".myBtn");
+        var span = document.querySelector(".mySpan");
+
+        btn.addEventListener("click", ()=> {
+            var myPromise = new Promise((success, reject)=>{
+                success();
+                reject();
+            });
+
+            myPromise.then(
+                function(){
+                    span.innerHTML = "why you clicked him.";
+                },
+                function() {
+                    span.innerHTML = "you didn't clicked him";
+                }
+            );
+        });
+    </script>
+</body>
+</html>

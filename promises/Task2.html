@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 : promise on user input</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        background-image: linear-gradient(70deg, #2E3192, #1BFFFF);
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        background-color: rgba(255,255,255,0.4);
+        border: 2px solid lavender;
+        border-radius: 12px;
+        padding: 20px 35px;
+    }
+    input {
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    textarea {
+        padding: 10px 20px;
+        border: 2px solid;
+        border-radius: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    button {
+        padding: 10px 15px;
+        border: 2px solid;
+        border-radius: 5px;
+    }
+    span {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <input type="text" class="username"placeholder="Enter username">
+        <textarea name="code" class="code" placeholder="enter code" cols="22" rows="10"></textarea>
+        <button class="sendBtn">Commit</button>
+        <span class="info"></span>
+    </div>
+
+    <script>
+        var btn = document.querySelector(".sendBtn");
+        var username = document.querySelector(".username");
+        var code = document.querySelector(".code");
+        var info = document.querySelector(".info");
+
+        btn.addEventListener("click", ()=>{
+            var myPromise = new Promise((success, reject)=>{
+                if(username.value!="" && code.value!="") {
+                    success();
+                }
+                else {
+                    reject();
+                }
+            });
+
+            myPromise.then(
+                function() {
+                    info.innerHTML = `username : ${username.value}, \ncode : ${code.value}, \nsuccessfully received...`;
+                    username.value = "";
+                    code.value = "";
+                },
+                function() {
+                    info.innerHTML = "didn't received any information please try again.";
+                    username.value = "";
+                    code.value = "";
+                }
+            );
+        });
+    </script>
+</body>
+</html>
