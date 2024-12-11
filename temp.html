@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table></table>
+    </div>
+
+    <script>
+        var obj = { "name": "Alice Johnson", "age": 14, "grade": "9th", "subjects": ["Math", "Science", "English"] };
+
+        for (const key in obj) {
+            var tr = document.createElement('tr');
+            var td = document.createElement('td');
+            var th = document.createElement('th');
+
+            th.append(key); //name of the key
+            td.append(obj[key]); //value from key
+
+            tr.appendChild(th);
+            tr.appendChild(td);
+            document.querySelector("table").appendChild(tr);
+        }
+        
+        document.querySelector("table").appendChild(tr);
+    
+    </script>
+</body>
+</html>

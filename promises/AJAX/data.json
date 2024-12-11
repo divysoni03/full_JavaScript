@@ -1,0 +1,22 @@
+{
+    "1": { "name": "Alice Johnson", "age": 14, "grade": "9th", "subjects": ["Math", "Science", "English"] },
+    "2": { "name": "Bob Smith", "age": 15, "grade": "10th", "subjects": ["History", "Math", "Art"] },
+    "3": { "name": "Charlie Brown", "age": 13, "grade": "8th", "subjects": ["English", "PE", "Math"] },
+    "4": { "name": "Daisy Lee", "age": 14, "grade": "9th", "subjects": ["Science", "History", "Music"] },
+    "5": { "name": "Ethan White", "age": 16, "grade": "11th", "subjects": ["Math", "English", "Chemistry"] },
+    "6": { "name": "Fiona Green", "age": 15, "grade": "10th", "subjects": ["Biology", "Math", "Drama"] },
+    "7": { "name": "George Hall", "age": 17, "grade": "12th", "subjects": ["History", "Physics", "Math"] },
+    "8": { "name": "Hannah Adams", "age": 14, "grade": "9th", "subjects": ["Art", "English", "Science"] },
+    "9": { "name": "Isaac Carter", "age": 13, "grade": "8th", "subjects": ["Math", "Geography", "History"] },
+    "10": { "name": "Jasmine Perez", "age": 16, "grade": "11th", "subjects": ["English", "Music", "Biology"] },
+    "11": { "name": "Kevin Scott", "age": 14, "grade": "9th", "subjects": ["PE", "Chemistry", "Math"] },
+    "12": { "name": "Lily Turner", "age": 15, "grade": "10th", "subjects": ["History", "Science", "English"] },
+    "13": { "name": "Mason Rivera", "age": 16, "grade": "11th", "subjects": ["Math", "Physics", "Drama"] },
+    "14": { "name": "Nina Evans", "age": 17, "grade": "12th", "subjects": ["Biology", "History", "Math"] },
+    "15": { "name": "Oscar Kelly", "age": 13, "grade": "8th", "subjects": ["English", "Art", "Math"] },
+    "16": { "name": "Peyton Brooks", "age": 14, "grade": "9th", "subjects": ["Geography", "Science", "Music"] },
+    "17": { "name": "Quinn Bailey", "age": 15, "grade": "10th", "subjects": ["Chemistry", "Math", "English"] },
+    "18": { "name": "Riley Morgan", "age": 16, "grade": "11th", "subjects": ["Art", "Physics", "History"] },
+    "19": { "name": "Sophia Martinez", "age": 17, "grade": "12th", "subjects": ["Science", "Math", "PE"] },
+    "20": { "name": "Thomas Walker", "age": 13, "grade": "8th", "subjects": ["Math", "English", "Science"] }
+}
