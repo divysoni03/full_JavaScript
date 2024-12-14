@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }td,th,tr{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <button>
+        Validate
+    </button>
+    <script>
+        document.querySelector('button').addEventListener('click',function(){
+            
+            const xhttp = new XMLHttpRequest();
+
+            xhttp.open("GET","Data.json");
+            xhttp.onload = function(data){
+                var tempobj = JSON.parse(data.target.response);
+                for (const key in tempobj) {
+                    if(localStorage.getItem("fname")==tempobj[key].name){
+                        document.write("Data Exist");
+                    }
+                }
+            }
+            xhttp.send();
+        });
+    </script>
+</body>
+</html>
