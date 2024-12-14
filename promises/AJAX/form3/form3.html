@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 3</title>
+</head>
+<body>
+    <input type="file" id="file" name="file">
+
+    <button class="btn">click to open file</button>
+
+    <script>
+        document.querySelector('.btn').addEventListener("click", ()=> {
+            var fileLocation = document.querySelector('input').value;
+            // document.write(fileLocation);
+            var fileName = fileLocation.split('\\');
+            // document.write(fileLocation[fileName.length - 1]);
+
+            location.href = fileName[fileName.length - 1];
+        });
+    </script>
+</body>
+</html>
