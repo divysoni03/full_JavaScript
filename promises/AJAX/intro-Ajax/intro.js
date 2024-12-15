@@ -12,6 +12,6 @@ btn.onclick = function(){
         
     }
 
-    xhttp.open('GET',"JavaScript.txt");
+    xhttp.open('GET',"javaScript.txt");
     xhttp.send();
 }

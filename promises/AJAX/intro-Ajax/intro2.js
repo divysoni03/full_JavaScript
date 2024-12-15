@@ -17,7 +17,7 @@ btn2.onclick = function(data){
     var msg = prompt("Enter your MSG : ");
     var xhttp = new XMLHttpRequest();
 
-    console.log(JSON.parse(data.target.response));    
+    // console.log(JSON.parse(data.target.response));    
 
     xhttp.onload = function (data){
         document.querySelector('#dv2').innerHTML = `<pre>${data.target.response}</pre>`;       
