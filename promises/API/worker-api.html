@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="start">start</button>
+    <button class="end">end</button>
+
+
+    <script>
+        let start = document.querySelector(".start");
+        let end = document.querySelector(".end");
+
+        let w; // worker variable
+        
+
+        start.addEventListener("click", ()=>{
+            if(typeof(w) == "undefined") {
+                w = new Worker("worker.js"); // defining worker
+            }
+            else {
+                console.log('worker no found');
+            }
+
+
+            end.addEventListener('click', ()=> {
+                w.terminate();
+                console.log('worker terminated.');
+            });
+        });
+
+        
+
+    </script>
+</body>
+
+</html>
